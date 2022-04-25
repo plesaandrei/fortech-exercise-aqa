@@ -1,6 +1,7 @@
 package fortech.exercise.aqa.tests;
 
 import fortech.exercise.aqa.pages.RegistrationFormPage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -20,12 +21,12 @@ public class BaseTest {
 
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+
     }
 
     @AfterTest
     public void quitDriver() {
-
-        driver.quit();
+//        driver.quit();
     }
 
 

@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/models/RegistrationFormModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/RegistrationFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BrowserEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/WebBrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/geckodriver.exe" afterDir="false" />
+    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestExercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/ProjectsAQA/exerciseAQA/src/test/resources/drivers"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProjectsAQA/exerciseAQA/src/test/resources/drivers&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\resources\drivers" />
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\java\fortech\exercise\aqa\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestExercise.testWebTableWithPageObject">
+  <component name="RunManager" selected="TestNG.TestExercise">
     <configuration name="TestExercise" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
@@ -78,7 +66,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExercise.testCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExercise.testAlertsFrameWindows" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +76,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
       <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestExercise" />
-      <option name="METHOD_NAME" value="testCheckBox" />
+      <option name="METHOD_NAME" value="testAlertsFrameWindows" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -96,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExercise.testTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExercise.testFileUpload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +94,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
       <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestExercise" />
-      <option name="METHOD_NAME" value="testTextBox" />
+      <option name="METHOD_NAME" value="testFileUpload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExercise.testWebTables" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExercise.testWidget" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +130,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
       <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestExercise" />
-      <option name="METHOD_NAME" value="testWebTables" />
+      <option name="METHOD_NAME" value="testWidget" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -152,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestExercise.testWebTableWithPageObject" />
         <item itemvalue="TestNG.TestExercise" />
-        <item itemvalue="TestNG.TestExercise.testWebTables" />
-        <item itemvalue="TestNG.TestExercise.testCheckBox" />
-        <item itemvalue="TestNG.TestExercise.testTextBox" />
+        <item itemvalue="TestNG.TestExercise.testWidget" />
+        <item itemvalue="TestNG.TestExercise.testAlertsFrameWindows" />
+        <item itemvalue="TestNG.TestExercise.testFileUpload" />
+        <item itemvalue="TestNG.TestExercise.testWebTableWithPageObject" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +157,14 @@
       <option name="presentableId" value="Default" />
       <updated>1650538193923</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1650652027052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650652027052</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,5 +177,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
