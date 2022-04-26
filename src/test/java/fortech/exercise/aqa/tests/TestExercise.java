@@ -4,6 +4,7 @@ import fortech.exercise.aqa.models.RegistrationFormModel;
 import fortech.exercise.aqa.pages.RegistrationFormPage;
 import fortech.exercise.aqa.util.Utils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,11 +21,14 @@ public class TestExercise extends BaseTest {
     public void testTextBox() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
+        je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
 
         WebElement textBoxButton = driver.findElement(By.id("item-0"));
+        je.executeScript("arguments[0].scrollIntoView(true);", textBoxButton);
         textBoxButton.click();
 
         WebElement userNameElement = driver.findElement(By.id("userName"));
@@ -42,6 +46,7 @@ public class TestExercise extends BaseTest {
         userPermanentAddressElement.sendKeys(Utils.getRandomAlphaNumericString(Utils.getRandomNumber(1, 20)));
 
         WebElement submitButton = driver.findElement(By.id("submit"));
+        je.executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
     }
 
@@ -49,20 +54,26 @@ public class TestExercise extends BaseTest {
     public void testCheckBox() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
+        je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
 
         WebElement textBoxButton = driver.findElement(By.id("item-1"));
+        je.executeScript("arguments[0].scrollIntoView(true);", textBoxButton);
         textBoxButton.click();
 
         WebElement homeCheckBox = driver.findElement(By.xpath("//span[@class='rct-text']/*[1]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", homeCheckBox);
         homeCheckBox.click();
 
         WebElement desktopCheckBox = driver.findElement(By.xpath("//label[@for='tree-node-desktop']/span[1]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", desktopCheckBox);
         desktopCheckBox.click();
 
         WebElement textResultElement = driver.findElement(By.id("result"));
+        je.executeScript("arguments[0].scrollIntoView(true);", textResultElement);
         String textGenerated = textResultElement.getText().replace("\n", " ");
         System.out.println(textGenerated);
     }
@@ -71,26 +82,31 @@ public class TestExercise extends BaseTest {
     public void testWebTableWithPageObject() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
+        je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
 
         WebElement textBoxButton = driver.findElement(By.id("item-3"));
+        je.executeScript("arguments[0].scrollIntoView(true);", textBoxButton);
         textBoxButton.click();
 
         WebElement editButton = driver.findElement(By.id("edit-record-2"));
+        je.executeScript("arguments[0].scrollIntoView(true);", editButton);
         editButton.click();
 
         RegistrationFormModel registrationModel = new RegistrationFormModel("Ion", "Pop", "test@automation.com", "40", "15000", "Legal");
 
         registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
-
         registrationPage.register(registrationModel);
 
         WebElement deleteButton = driver.findElement(By.id("delete-record-3"));
+        je.executeScript("arguments[0].scrollIntoView(true);", deleteButton);
         deleteButton.click();
 
         WebElement addButton = driver.findElement(By.id("addNewRecordButton"));
+        je.executeScript("arguments[0].scrollIntoView(true);", addButton);
         addButton.click();
 
         registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
@@ -103,14 +119,18 @@ public class TestExercise extends BaseTest {
     public void testWebTables() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
+        je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
 
         WebElement textBoxButton = driver.findElement(By.id("item-3"));
+        je.executeScript("arguments[0].scrollIntoView(true);", textBoxButton);
         textBoxButton.click();
 
         WebElement editButton = driver.findElement(By.id("edit-record-2"));
+        je.executeScript("arguments[0].scrollIntoView(true);", editButton);
         editButton.click();
 
         WebElement userFirstName = driver.findElement(By.id("firstName"));
@@ -141,9 +161,11 @@ public class TestExercise extends BaseTest {
         submitButton.click();
 
         WebElement deleteButton = driver.findElement(By.id("delete-record-3"));
+        je.executeScript("arguments[0].scrollIntoView(true);", deleteButton);
         deleteButton.click();
 
         WebElement addButton = driver.findElement(By.id("addNewRecordButton"));
+        je.executeScript("arguments[0].scrollIntoView(true);", addButton);
         addButton.click();
 
         RegistrationFormModel randomModel = Utils.getRandomRegistrationModel();
@@ -173,6 +195,7 @@ public class TestExercise extends BaseTest {
         newUserDepartment.sendKeys(randomModel.getDepartment());
 
         WebElement newSubmitButton = driver.findElement(By.id("submit"));
+        je.executeScript("arguments[0].scrollIntoView(true);", newSubmitButton);
         newSubmitButton.click();
     }
 
@@ -180,36 +203,39 @@ public class TestExercise extends BaseTest {
     public void testFileUpload() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
+        je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
 
         WebElement uploadDownloadButton = driver.findElement(By.id("item-7"));
-
-        Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.PAGE_DOWN);
-        actions.moveToElement(uploadDownloadButton).build().perform();
-
+        je.executeScript("arguments[0].scrollIntoView(true);", uploadDownloadButton);
         uploadDownloadButton.click();
 
-        WebElement uploadFileButton = driver.findElement(By.xpath("//label[@for='uploadFile']/following-sibling::input"));
-        uploadFileButton.sendKeys("C:\\ProjectsAQA\\exerciseAQA\\src\\test\\resources\\test.zip");
+        WebElement uploadFile = driver.findElement(By.xpath("//label[@for='uploadFile']/following-sibling::input"));
+        je.executeScript("arguments[0].scrollIntoView(true);", uploadFile);
+        uploadFile.sendKeys("C:\\ProjectsAQA\\exerciseAQA\\src\\test\\resources\\test.zip");
     }
 
     @Test
     public void testAlertsFrameWindows() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement alertsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[3]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", alertsButton);
         alertsButton.click();
 
         WebElement framesButton = driver.findElement(By.xpath("//div[@class='element-list collapse show']/ul/*[3]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", framesButton);
         framesButton.click();
 
         driver.switchTo().frame("frame1");
 
         WebElement frame = driver.findElement(By.id("sampleHeading"));
+        je.executeScript("arguments[0].scrollIntoView(true);", frame);
         String textIFrame = frame.getText();
         System.out.println(textIFrame);
     }
@@ -218,17 +244,19 @@ public class TestExercise extends BaseTest {
     public void testWidget() {
 
         driver.get("https://demoqa.com");
+        JavascriptExecutor je = (JavascriptExecutor) driver;
 
         WebElement widgetButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[4]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", widgetButton);
         widgetButton.click();
 
         WebElement datePickerButton = driver.findElement(By.xpath("//div[@class='element-list collapse show']/ul/*[3]"));
+        je.executeScript("arguments[0].scrollIntoView(true);", datePickerButton);
         datePickerButton.click();
 
         WebElement selectDate = driver.findElement(By.id("datePickerMonthYearInput"));
 
         String oldDate = selectDate.getAttribute("value");
-        System.out.println("Date before Addition: " + oldDate);
         //Specifying date format that matches the given date
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 
@@ -244,8 +272,6 @@ public class TestExercise extends BaseTest {
         c.add(Calendar.DAY_OF_MONTH, 30);
         //Date after adding the days to the given date
         String newDate = sdf.format(c.getTime());
-        //Displaying the new Date after addition of Days
-        System.out.println("Date after Addition: " + newDate);
 
         selectDate.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
         selectDate.sendKeys(newDate, Keys.ENTER);

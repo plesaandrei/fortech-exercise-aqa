@@ -7,7 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class WebBrowser {
 
-    public static WebDriver getDriver(BrowserEnum browser){
+    public static WebDriver getDriver(BrowserEnum browser) {
         WebDriver driver = null;
 
         switch (browser) {

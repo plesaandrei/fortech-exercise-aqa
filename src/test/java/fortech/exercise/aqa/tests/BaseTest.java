@@ -18,15 +18,13 @@ public class BaseTest {
     public void setUp() {
 
         driver = WebBrowser.getDriver(BrowserEnum.CHROME);
-
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-
     }
 
     @AfterTest
     public void quitDriver() {
-//        driver.quit();
+        driver.quit();
     }
 
 
