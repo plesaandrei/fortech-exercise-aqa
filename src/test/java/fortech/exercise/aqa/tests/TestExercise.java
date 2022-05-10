@@ -7,10 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -84,6 +82,10 @@ public class TestExercise extends BaseTest {
         driver.get("https://demoqa.com");
         JavascriptExecutor je = (JavascriptExecutor) driver;
 
+//        RegistrationFormPage registrationsPage=new RegistrationFormPage(driver);
+//        System.out.println(registrationsPage.getAgeWebElement().getText());
+
+
         WebElement elementsButton = driver.findElement(By.xpath("//div[@class='category-cards']/*[1]/div"));
         je.executeScript("arguments[0].scrollIntoView(true);", elementsButton);
         elementsButton.click();
@@ -98,8 +100,13 @@ public class TestExercise extends BaseTest {
 
         RegistrationFormModel registrationModel = new RegistrationFormModel("Ion", "Pop", "test@automation.com", "40", "15000", "Legal");
 
-        registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
-        registrationPage.register(registrationModel);
+//        registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
+//        RegistrationFormPage registrationsPage=new RegistrationFormPage(driver);
+        RegistrationFormPage registrationsPage=new RegistrationFormPage(driver);
+
+
+        registrationsPage.register(registrationModel);
+
 
         WebElement deleteButton = driver.findElement(By.id("delete-record-3"));
         je.executeScript("arguments[0].scrollIntoView(true);", deleteButton);
@@ -109,9 +116,10 @@ public class TestExercise extends BaseTest {
         je.executeScript("arguments[0].scrollIntoView(true);", addButton);
         addButton.click();
 
-        registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
+//        registrationPage = PageFactory.initElements(driver, RegistrationFormPage.class);
 
-        registrationPage.register(Utils.getRandomRegistrationModel());
+        registrationsPage.register(Utils.getRandomRegistrationModel());
+        registrationsPage.getSalaryWebElement();
     }
 
 

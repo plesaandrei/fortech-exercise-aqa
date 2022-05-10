@@ -2,12 +2,12 @@ package fortech.exercise.aqa.models;
 
 public class RegistrationFormModel {
 
-    String firstName;
-    String lastName;
-    String email;
-    String age;
-    String salary;
-    String department;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String age;
+    private String salary;
+    private String department;
 
     public RegistrationFormModel(String firstName, String lastName, String email, String age, String salary, String department) {
         this.firstName = firstName;

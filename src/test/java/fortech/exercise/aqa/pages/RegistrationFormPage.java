@@ -1,11 +1,20 @@
 package fortech.exercise.aqa.pages;
 
 import fortech.exercise.aqa.models.RegistrationFormModel;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class RegistrationFormPage {
+
+    private WebDriver driver;
 
     @FindBy(how = How.ID,using = "firstName")
     private WebElement firstNameWebElement;
@@ -28,31 +37,69 @@ public class RegistrationFormPage {
     @FindBy(how = How.ID,using = "submit")
     private WebElement submitButton;
 
-    public void register(String firstName,String lastName,String email,String age,String salary,String department){
+    public RegistrationFormPage(WebDriver driver) {
 
+        this.driver=driver;
+
+        PageFactory.initElements(driver, this);
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        wait.until(ExpectedConditions.visibilityOf(firstNameWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", firstNameWebElement);
+
+        wait.until(ExpectedConditions.visibilityOf(lastNameWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", lastNameWebElement);
+
+        wait.until(ExpectedConditions.visibilityOf(userEmailWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", userEmailWebElement);
+
+        wait.until(ExpectedConditions.visibilityOf(ageWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", ageWebElement);
+
+        wait.until(ExpectedConditions.visibilityOf(salaryWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", salaryWebElement);
+
+        wait.until(ExpectedConditions.visibilityOf(departmentWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", departmentWebElement);
+    }
+
+    public void register(String firstName, String lastName, String email, String age, String salary, String department){
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+
+        wait.until(ExpectedConditions.visibilityOf(firstNameWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", firstNameWebElement);
         firstNameWebElement.clear();
         firstNameWebElement.sendKeys(firstName);
 
+        wait.until(ExpectedConditions.visibilityOf(lastNameWebElement));
+        je.executeScript("arguments[0].scrollIntoView(true);", lastNameWebElement);
         lastNameWebElement.clear();
         lastNameWebElement.sendKeys(lastName);
 
+        wait.until(ExpectedConditions.visibilityOf(userEmailWebElement));
         userEmailWebElement.clear();
         userEmailWebElement.sendKeys(email);
 
+        wait.until(ExpectedConditions.visibilityOf(ageWebElement));
         ageWebElement.clear();
         ageWebElement.sendKeys(age);
 
+        wait.until(ExpectedConditions.visibilityOf(salaryWebElement));
         salaryWebElement.clear();
         salaryWebElement.sendKeys(salary);
 
+        wait.until(ExpectedConditions.visibilityOf(departmentWebElement));
         departmentWebElement.clear();
         departmentWebElement.sendKeys(department);
 
+        wait.until(ExpectedConditions.visibilityOf(submitButton));
         submitButton.click();
 
     }
-
-
 
     public void register(RegistrationFormModel registrationModel){
 
