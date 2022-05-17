@@ -77,9 +77,9 @@ public class TestElements extends BaseTest {
         je.executeScript("arguments[0].scrollIntoView(true);", formsButton);
         formsButton.click();
 
-        WebElement pacticeFormButton = driver.findElement(By.xpath("//div[@class='element-list collapse show']/ul/li"));
-        je.executeScript("arguments[0].scrollIntoView(true);", pacticeFormButton);
-        pacticeFormButton.click();
+        WebElement practiceFormButton = driver.findElement(By.xpath("//div[@class='element-list collapse show']/ul/li"));
+        je.executeScript("arguments[0].scrollIntoView(true);", practiceFormButton);
+        practiceFormButton.click();
 
         WebElement selectButton = driver.findElement(By.id("react-select-3-input"));
         selectButton.sendKeys("some text");
@@ -87,5 +87,11 @@ public class TestElements extends BaseTest {
         WebElement submitButton = driver.findElement(By.id("submit"));
         je.executeScript("arguments[0].scrollIntoView(true);", submitButton);
         je.executeScript("arguments[0].click()", submitButton);
+    }
+
+    @Test
+    public void test(){
+
+
     }
 }

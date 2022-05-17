@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="no.3 commit - optimized selectors with scrollIntoView">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/models/StudentFormModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/HomeCategoriesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsElementsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsFormsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/StudentFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestAlertFrameWindow.java" afterDir="false" />
+    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="no.4 commit - studentFormPO and model,more elementsTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/models/RegistrationFormModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/models/RegistrationFormModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/RegistrationFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/RegistrationFormPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BrowserEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BrowserEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestExercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/WebBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/WebBrowser.java" afterDir="false" />
@@ -45,40 +38,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowCommit.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/andrei.plesa/Desktop/Scoala Informala/scoala informala/siit-gr7-team2-automation&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowCommit.ShowToolbar": "false",
+    "last_opened_file_path": "C:/Users/andrei.plesa/Desktop/Scoala Informala/scoala informala/siit-gr7-team2-automation",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\resources\drivers" />
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\java\fortech\exercise\aqa\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestAlertFrameWindow.testAlerts">
-    <configuration name="TestAlertFrameWindow" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="exerciseAQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestAlertFrameWindow" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn compile" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.TestExercise.testAlertsFrameWindows">
     <configuration name="TestAlertFrameWindow.testAlerts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
@@ -97,23 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="exerciseAQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestElements" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestElements.testButtons" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
@@ -125,6 +91,24 @@
       <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
       <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestElements" />
       <option name="METHOD_NAME" value="testButtons" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestElements.testForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="exerciseAQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestElements" />
+      <option name="METHOD_NAME" value="testForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,13 +134,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestExercise.testAlertsFrameWindows" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="exerciseAQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestExercise" />
+      <option name="METHOD_NAME" value="testAlertsFrameWindows" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestExercise.testAlertsFrameWindows" />
+        <item itemvalue="TestNG.TestElements.testForm" />
+        <item itemvalue="TestNG.TestElements.testStudentForm" />
         <item itemvalue="TestNG.TestAlertFrameWindow.testAlerts" />
         <item itemvalue="TestNG.TestElements.testButtons" />
-        <item itemvalue="TestNG.TestElements.testStudentForm" />
-        <item itemvalue="TestNG.TestElements" />
-        <item itemvalue="TestNG.TestAlertFrameWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650963264042</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="no.4 commit - studentFormPO and model,more elementsTest">
+      <created>1652201890089</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652201890089</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +217,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="no.2 commit - added tests from exercises 4,5,6 (upload file,frame, widget)" />
     <MESSAGE value="no.3 commit - optimized selectors with scrollIntoView" />
-    <option name="LAST_COMMIT_MESSAGE" value="no.3 commit - optimized selectors with scrollIntoView" />
+    <MESSAGE value="no.4 commit - studentFormPO and model,more elementsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="no.4 commit - studentFormPO and model,more elementsTest" />
   </component>
 </project>

@@ -1,10 +1,12 @@
 package fortech.exercise.aqa.tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
+import org.openqa.selenium.opera.OperaDriver;
 
 
 public class WebBrowser {
@@ -14,21 +16,31 @@ public class WebBrowser {
 
         switch (browser) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+//                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
-                driver.manage().window().maximize();
                 break;
 
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver.exe");
+//                System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver.exe");
+                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
-                driver.manage().window().maximize();
                 break;
 
             case IE:
-                System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer.exe");
+//                System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer.exe");
+                WebDriverManager.iedriver().setup();
                 driver = new InternetExplorerDriver();
-                driver.manage().window().maximize();
+                break;
+
+            case EDGE:
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+                break;
+
+            case OPERA:
+                WebDriverManager.operadriver().setup();
+                driver = new OperaDriver();
                 break;
 
             default:
