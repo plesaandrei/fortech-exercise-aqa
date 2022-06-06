@@ -60,7 +60,7 @@ public class Utils {
 
     public static int getRandomNumber()   {
 
-        int n=999999;
+        int n=Integer.MAX_VALUE;
 
         return (int) (n* Math.random());
     }

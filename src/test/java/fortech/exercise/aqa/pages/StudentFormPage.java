@@ -133,7 +133,10 @@ public class StudentFormPage extends BaseTest {
                          String hobbiesReading, String hobbiesMusic, String uploadPicture, String currentAddress,
                          String state, String city, String submit){
 
+
         StudentFormPage studentFormPage=new StudentFormPage(driver);
+        JavascriptExecutor je=(JavascriptExecutor) driver;
+
 
         studentFormPage.firstNameWebElement.clear();
         studentFormPage.firstNameWebElement.sendKeys(firstName);
@@ -157,7 +160,7 @@ public class StudentFormPage extends BaseTest {
         studentFormPage.mobilePhoneWebElement.sendKeys(mobilePhone);
 
         studentFormPage.dateOfBirthWebElement.clear();
-        studentFormPage.dateOfBirthWebElement.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+        studentFormPage.dateOfBirthWebElement.sendKeys(Keys.CONTROL, "a");
         studentFormPage.dateOfBirthWebElement.sendKeys(dateOfBirth, Keys.ENTER);
 
         studentFormPage.subjectsWebElement.clear();
@@ -179,11 +182,15 @@ public class StudentFormPage extends BaseTest {
         studentFormPage.currentAddressWebElement.clear();
         studentFormPage.currentAddressWebElement.sendKeys(currentAddress);
 
-        studentFormPage.stateWebElement.clear();
+        studentFormPage.stateWebElement.click();
         studentFormPage.stateWebElement.sendKeys(state);
 
-        studentFormPage.cityWebElement.clear();
+        studentFormPage.cityWebElement.click();
         studentFormPage.cityWebElement.sendKeys(city);
+
+
+        studentFormPage.subjectsWebElement.click();
+        studentFormPage.subjectsWebElement.sendKeys(subjects);
 
         studentFormPage.submitWebElement.click();
 

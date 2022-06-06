@@ -1,9 +1,7 @@
 package fortech.exercise.aqa.tests;
 
 import fortech.exercise.aqa.models.StudentFormModel;
-import fortech.exercise.aqa.pages.HomeCategoriesPage;
-import fortech.exercise.aqa.pages.ItemsFormsPage;
-import fortech.exercise.aqa.pages.StudentFormPage;
+import fortech.exercise.aqa.pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -14,7 +12,7 @@ import org.testng.annotations.Test;
 public class TestElements extends BaseTest {
 
     @Test
-    public void testStudentForm(){
+    public void testStudentForm() throws InterruptedException {
 
         driver.get("https://demoqa.com");
 
@@ -25,7 +23,7 @@ public class TestElements extends BaseTest {
         itemsFormsPage.getPracticeFormElement().click();
 
         StudentFormModel studentFormModel=new StudentFormModel("ion","pop", "mail@mail.com", "X", "", "", "07431111111"
-        ,"09 May 2022","blabla","X","X", "","", "astreeeeeeet", "IL","Bucharest","");
+        ,"09 May 2022","blabla","X","X", "","", "astreeeeeeet", "","","");
 
         StudentFormPage studentFormPage=new StudentFormPage(driver);
         studentFormPage.register(studentFormModel);
@@ -90,8 +88,46 @@ public class TestElements extends BaseTest {
     }
 
     @Test
-    public void test(){
+    public void testSmallModal(){
+        driver.get("https://demoqa.com");
 
+        HomeCategoriesPage homeCategoriesPage=new HomeCategoriesPage(driver);
+        homeCategoriesPage.getAlertsFrameWindowsElement().click();
 
+        ItemsAlertsFrameWindowsPage itemsAlertsFrameWindowsPage=new ItemsAlertsFrameWindowsPage(driver);
+        itemsAlertsFrameWindowsPage.getModalDialogsElement().click();
+
+        ModalsButtonsPage modalsPage=new ModalsButtonsPage(driver);
+        modalsPage.getSmallModalButtonWebElement().click();
+
+        SmallModalPage smallModalPage=new SmallModalPage(driver);
+
+        Assert.assertEquals(smallModalPage.getHeaderTitleWebElement().getText(),"Small Modal","Verify the header title");
+        Assert.assertEquals(smallModalPage.getModalBodyWebElement().getText(),"This is a small modal. It has very less content","Verify the body content");
+
+        smallModalPage.getCloseButtonWebElement().click();
     }
+
+    @Test
+    public void testLargeModal(){
+
+        driver.get("https://demoqa.com");
+
+        HomeCategoriesPage homeCategoriesPage=new HomeCategoriesPage(driver);
+        homeCategoriesPage.getAlertsFrameWindowsElement().click();
+
+        ItemsAlertsFrameWindowsPage itemsAlertsFrameWindowsPage=new ItemsAlertsFrameWindowsPage(driver);
+        itemsAlertsFrameWindowsPage.getModalDialogsElement().click();
+
+        ModalsButtonsPage modalsPage=new ModalsButtonsPage(driver);
+        modalsPage.getLargeModalButtonWebElement().click();
+
+        LargeModalPage largeModalPage=new LargeModalPage(driver);
+
+        Assert.assertEquals(largeModalPage.getHeaderTitleWebElement().getText(),"Large Modal","Verify the header title");
+        Assert.assertTrue(largeModalPage.getModalBodyWebElement().getText().contains("Lorem Ipsum is simply dummy tex"),"Verify a part of the body content");
+
+        largeModalPage.getCloseButtonWebElement().click();
+    }
+
 }

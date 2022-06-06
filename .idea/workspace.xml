@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="no.5 commit - WebDriverManager added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsAlertsFrameWindowsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsBookStorePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsInteractionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ItemsWidgetsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestItems.java" afterDir="false" />
+    <list default="true" id="2e8dd595-e1e7-470f-8656-199a6586930f" name="Changes" comment="no.6 commit - new PO's added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/LargeModalPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/ModalsButtonsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/SmallModalPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/StudentFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/pages/StudentFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/tests/TestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fortech/exercise/aqa/util/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowCommit.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Users/andrei.plesa/Desktop/Scoala Informala/scoala informala/siit-gr7-team2-automation",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowCommit.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andrei.plesa/Desktop/Scoala Informala/scoala informala/siit-gr7-team2-automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\resources\drivers" />
       <recent name="C:\ProjectsAQA\exerciseAQA\src\test\java\fortech\exercise\aqa\tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fortech.exercise.aqa.pages" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -60,7 +65,60 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestItems.testBookStoreApplication">
+  <component name="RunManager" selected="TestNG.TestElements.testStudentForm">
+    <configuration name="TestAlertFrameWindow" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="exerciseAQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestAlertFrameWindow" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAlertFrameWindow.testNewWindowBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="exerciseAQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestAlertFrameWindow" />
+      <option name="METHOD_NAME" value="testNewWindowBrowser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestElements.testStudentForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="exerciseAQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestElements" />
+      <option name="METHOD_NAME" value="testStudentForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestItems" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
@@ -78,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestItems.testBookStoreAplication" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="fortech.exercise.aqa.tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="exerciseAQA" />
       <extension name="coverage">
         <pattern>
@@ -87,63 +145,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestItems" />
-      <option name="METHOD_NAME" value="testBookStoreAplication" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestItems.testBookStoreApplication" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="exerciseAQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestItems" />
-      <option name="METHOD_NAME" value="testBookStoreApplication" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestItems.testInteractions" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="exerciseAQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestItems" />
-      <option name="METHOD_NAME" value="testInteractions" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestItems.testItemsElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="exerciseAQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fortech.exercise.aqa.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fortech.exercise.aqa.tests" />
-      <option name="MAIN_CLASS_NAME" value="fortech.exercise.aqa.tests.TestItems" />
-      <option name="METHOD_NAME" value="testItemsElements" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestItems.testBookStoreApplication" />
-        <item itemvalue="TestNG.TestItems.testItemsElements" />
+        <item itemvalue="TestNG.TestElements.testStudentForm" />
+        <item itemvalue="TestNG.TestAlertFrameWindow" />
+        <item itemvalue="TestNG.fortech.exercise.aqa.tests" />
+        <item itemvalue="TestNG.TestAlertFrameWindow.testNewWindowBrowser" />
         <item itemvalue="TestNG.TestItems" />
-        <item itemvalue="TestNG.TestItems.testBookStoreAplication" />
-        <item itemvalue="TestNG.TestItems.testInteractions" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652793810761</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="no.6 commit - new PO's added">
+      <created>1653557153877</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653557153877</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +233,7 @@
     <MESSAGE value="no.3 commit - optimized selectors with scrollIntoView" />
     <MESSAGE value="no.4 commit - studentFormPO and model,more elementsTest" />
     <MESSAGE value="no.5 commit - WebDriverManager added" />
-    <option name="LAST_COMMIT_MESSAGE" value="no.5 commit - WebDriverManager added" />
+    <MESSAGE value="no.6 commit - new PO's added" />
+    <option name="LAST_COMMIT_MESSAGE" value="no.6 commit - new PO's added" />
   </component>
 </project>
