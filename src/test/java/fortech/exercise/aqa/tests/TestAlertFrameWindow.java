@@ -1,5 +1,6 @@
 package fortech.exercise.aqa.tests;
 
+import fortech.exercise.aqa.pages.AlertPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -141,6 +142,11 @@ public class TestAlertFrameWindow extends BaseTest {
 
         WebElement forthAlertDismiss = driver.findElement(By.id("promtButton"));
         forthAlertDismiss.click();
+
+        AlertPage alertPage=new AlertPage();
+        alertPage.AlertPage(driver);
+        alertPage.accept();
+
         driver.switchTo().alert().dismiss();
 
         boolean isPromptTextDisplayed;

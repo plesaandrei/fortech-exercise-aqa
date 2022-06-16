@@ -1,5 +1,6 @@
 package fortech.exercise.aqa.tests;
 
+import fortech.exercise.aqa.models.RegistrationFormModel;
 import fortech.exercise.aqa.pages.*;
 import org.testng.annotations.Test;
 
@@ -110,4 +111,5 @@ public class TestItems extends BaseTest{
         itemsBookStorePage.getProfileElement().click();
         itemsBookStorePage.getBookStoreApiElement().click();
     }
+
 }

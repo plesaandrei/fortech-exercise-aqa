@@ -18,6 +18,9 @@ public class RegistrationFormModel {
         this.department = department;
     }
 
+    public RegistrationFormModel() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
